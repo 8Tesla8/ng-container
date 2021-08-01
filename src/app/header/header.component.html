@@ -1,0 +1,16 @@
+<div class="header">
+
+  <ng-template #defaultTemplate>
+    
+    <h1>Default Header</h1>
+    <p>My supercool header</p>
+      
+  </ng-template>
+
+
+  <ng-container 
+    [ngTemplateOutlet]="headerTemplate ? headerTemplate: defaultTemplate"
+    >
+  </ng-container>
+
+</div>
